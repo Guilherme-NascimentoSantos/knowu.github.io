@@ -14,7 +14,7 @@
   <title>KnowU</title>
 </head>
 
-<body>
+<body onload="buscarId()">
   <div class="desktop">
     <nav class="sidebar-navigation">
 
@@ -261,6 +261,13 @@
 
   var eventosProximos = []
   var locations = [];
+  var idUsuario;
+
+
+  function buscarId() {
+    var params = new URLSearchParams(window.location.search)
+    idUsuario = params.get('id')
+  }
 
   function buscarEventosProximos() {
 
@@ -295,6 +302,26 @@
     var dataInicio = 'testeInicio';
     var dataFim = 'testeFim';
     var link = 'www.com'
+
+    let params = {
+      nome: nomeEvento,
+      descricao: descricao,
+      dataInicio: dataInicio,
+      dataFim: dataFim,
+      qntdParticipantes: qntdParticipantes,
+      link: link,
+      usuario: {
+        idUsuario: idUsuario
+      }
+    }
+
+
+    axios.post(`evento/criar${idUsuario}`, params).then(function (resultado) {
+      alert("Evento criado com sucesso!!")
+      // eventosProximos = resultado.data[0]
+    }).catch(e => {
+      console.log(e);
+    })
   }
 
 
