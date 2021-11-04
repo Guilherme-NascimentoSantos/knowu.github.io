@@ -317,7 +317,7 @@
     }
 
 
-    axios.post(`http://localhost:8080/evento/criar/${idUsuario}`, params).then(function (resultado) {
+    axios.post("http://localhost:8080/evento/criar/" + idUsuario, params).then(function (resultado) {
       alert("Evento criado com sucesso!!")
       // eventosProximos = resultado.data[0]
     }).catch(e => {
