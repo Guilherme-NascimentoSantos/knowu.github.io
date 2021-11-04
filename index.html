@@ -297,11 +297,12 @@
 
 
   function criarEvento() {
-    var qntdParticipantes = document.getElementById("input-qtd");
-    var nomeEvento = document.getElementById("w3review");
-    var dataInicio = 'testeInicio';
-    var dataFim = 'testeFim';
-    var link = 'www.com'
+    var qntdParticipantes = 10;
+    var nomeEvento = "um evento bacana";
+    var dataInicio = '05/11/2021 17:00:00';
+    var descricao = "vai ser um teste legal";
+    var dataFim = '05/11/2021 18:00:00';
+    var link = 'www.eventolegal.com'
 
     let params = {
       nome: nomeEvento,
@@ -316,7 +317,7 @@
     }
 
 
-    axios.post(`evento/criar${idUsuario}`, params).then(function (resultado) {
+    axios.post(`http://localhost:8080/evento/evento/criar${idUsuario}`, params).then(function (resultado) {
       alert("Evento criado com sucesso!!")
       // eventosProximos = resultado.data[0]
     }).catch(e => {
