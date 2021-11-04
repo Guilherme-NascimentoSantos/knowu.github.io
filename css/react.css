@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9eaf4;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-color {
+  position: absolute;
+  z-index: -1;
+  width: 150%;
+  height: 150vh;
+}
+
+.content-esqueceu-senha {
+  width: 100%;
+}
+
+.header-esqueceu-sua-senha {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+.seta-esqueceu-sua-senha {
+  width: 3%;
+  cursor: pointer;
+}
+
+.meio-esqueceu-sua-senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-esqueceu-sua-senha {
+  width: 15%;
+}
+
+.icons-esqueceu-sua-senha {
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 30%;
+}
+
+.form-esqueceu-sua-senha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.texto-esqueceu-sua-senha{
+    text-align: center;
+    font-size: 4vh;
+    margin-bottom: 20px;
+}
+
+.sub-titulo-esqueceu-sua-senha{
+    text-align: justify;
+    width: 30%;
+    color: #171616;
+    font-size: 2vh;
+}
+
+.input-esqueceu-sua-senha {
+  width: 30%;
+  height: 90px;
+  padding-left: 20px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border-color: blue;
+  border-radius: 16px;
+  background-color: transparent;
+}
+
+.botao-esqueceu-sua-senha {
+  width: 32%;
+  height: 90px;
+  margin-top: 10px;
+  color: #fff;
+  border: none;
+  font-size: 40px;
+  border-radius: 16px;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.reenviar {
+  margin-top: 50px;
+  font-size: 2vh;
+}
+
+@media (max-width: 1200px) {
+  .logo-esqueceu-sua-senha {
+    width: 40%;
+    margin-top: 30px;
+  }
+
+  .texto-esqueceu-sua-senha{
+      text-align: center;
+      font-size: 5vh;
+  }
+
+  .sub-titulo-esqueceu-sua-senha{
+      text-align: center;
+      width: 100%;
+  }
+
+  .seta-esqueceu-sua-senha {
+    width: 9%;
+  }
+
+  .text-voltar {
+    display: none;
+  }
+
+  .icons-esqueceu-sua-senha {
+    margin-left: 80px;
+    margin-top: 60px;
+    width: 75%;
+  }
+
+  .form-esqueceu-sua-senha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  .input-esqueceu-sua-senha {
+    width: 78%;
+    height: 90px;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+    border-color: blue;
+    border-radius: 16px;
+    background-color: transparent;
+  }
+
+  .botao-esqueceu-sua-senha {
+    width: 80%;
+    height: 90px;
+    margin-top: 10px;
+    color: #fff;
+    border: none;
+    font-size: 40px;
+    border-radius: 16px;
+    background-color: blue;
+    cursor: pointer;
+  }
+}
