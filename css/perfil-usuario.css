@@ -1,4 +1,4 @@
-#nome-dos-eventos-usuario {
+/* #nome-dos-eventos-usuario {
   line-height: 19px;
   font-style: normal;
   position: relative;
@@ -221,13 +221,13 @@ span{
     letter-spacing: 0.5px;
   }
 
- 
+  /* Style the header with a grey background and some padding 
 .header {
     overflow: hidden;
     padding: 18px 127px;
   }
   
-  
+  /* Style the header links 
   .header a {
     float: left;
     color: black;
@@ -239,7 +239,7 @@ span{
     border-radius: 4px;
   }
   
-  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger
   .header a .pesquisar-pessoas {
     font-size: 25px;
     font-weight: bold;
@@ -275,7 +275,7 @@ span{
   }
   
   .tip-up {
-    top: -25px; 
+    top: -25px; /* Same as body margin top + border 
     left: 10px;
     border-right-color: transparent;
     border-left-color: transparent;
@@ -459,7 +459,7 @@ span{
   font-size: 16px;
 }
   
-
+  /* Style the active/current link
   .header a.active {
     background: linear-gradient(180deg, #D15FC0 0%, #8C9CFF 100%);
     color: white;
@@ -468,7 +468,7 @@ span{
     border-radius: 50px;
   }
   
-  
+  /* Float the link section to the right 
   .header-right {
     float: right;
     margin-right: 28%;
@@ -482,7 +482,7 @@ span{
     font-family: Poppins;
   }
   
-  Float four columns side by side 
+  /* Float four columns side by side 
   .column-perfil-usuario {
     float: right;
     width: 21%;
@@ -491,18 +491,22 @@ span{
     margin-right: 1%;
   }
 
-
+  /* Remove extra left and right margins, due to padding 
+  
+  /* Clear floats after the columns 
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
 
+    /* Style the counter cards 
     .card-do-perfil-usuario {
       background-color: #E3E4EE;
       height: 382px;
     }
-
+  
+  /* Responsive columns 
   @media screen and (max-width: 600px) {
     .column-perfil-usuario {
       width: 100%;
@@ -511,6 +515,8 @@ span{
     }
   }
   
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other 
   @media screen and (max-width: 500px) {
   .container-pesquisar-pessoas{
     width: 100%;
@@ -572,9 +578,15 @@ span{
   bottom: 41px;
   border-radius: 10px;
   left: 35%;
-}
 
-.header-menu-perfil{
+  */
+
+
+/* *{
+  overflow: visible;
+} */
+
+  .header-menu-perfil{
     display: flex;
     align-items: center;
     justify-content: space-between;
