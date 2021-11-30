@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.caixa {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 1%;
+}
+
+.navbar-header-itens {
+    margin-left: 1px;
+}
+
+.navbar-header-itens li {
+    display: inline; 
+}
+
+.navbar-header-itens li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+    padding: 25px;
+    margin-left: 20%;
+}
+
+
+
+.navbar{
+    background-color: #E9EAF4;
+    max-width: 100vw;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.bell{
+    font-size: 1.5rem;
+}
+
+.navsidebar-menu-bars{
+    margin-left: 2rem;
+    font-size: 2rem;
+    background: none;
+}
+
+.navsidebar-menu{
+    background-color: #E9EAF4;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+}
+
+.navsidebar-menu.active{
+    left: 0;
+    transition: 350ms;
+}
+
+.navsidebar-text{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 50px 0 0 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.navsidebar-text a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 16px;
+    border-radius: 4px;
+    font-size: 2rem;
+}
+
+.navsidebar-text:last-child{
+    margin-top: 50%;
+}
+
+.navsidebar-menu-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navsidebar-toggle{
+    background-color: #E9EAF4;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navsidebar-titulo {
+    font-size: 1.5rem;
+}
+
+.imagem-usuario{
+    margin: 10% 0 15% 10%;
+    width: 70px;
+}
+
+.imagem-logo{
+    margin: 10% 0 8% 10%;
+    width: 60px;
+}
+
+@media (min-width: 1025px){
+    .caixa{
+        margin-left: 10%;
+    }
+}
