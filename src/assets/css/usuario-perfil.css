@@ -1,0 +1,139 @@
+body{
+    background-color: #E9EAF4;
+}
+
+.perfil-main{
+    width: 50%;
+    background-color: #E9EAF4;
+    margin-left: 26%;
+}
+
+.perfil-midia{
+    float: right;
+    margin: 5% 5% 0 0;
+    width: 25%;
+}
+
+.perfil-midia-titulo{
+    float: left;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3%;
+}
+
+.perfil-midia-btn{
+    font-size: 2.5rem;
+    border: none;
+    margin: 2% 0 0 2%;
+    color:  #D15FC0;
+    background: transparent;
+}
+
+.perfil-container-images{
+    width: 100%;
+}
+
+.perfil-midia-image:first-child{
+    margin-top: 5%;
+}
+
+.perfil-form{
+    width: 50%;
+    display: inline-block;
+    margin: 5% 0 0 5%;
+}
+
+.perfil-label{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    color: #171616;
+}
+
+.perfil-input{
+    height: 40px;
+    width: 70%;
+    border-color: rgba(76, 39, 151, 1);
+    border-radius: 30px;
+    margin-bottom: 5%;
+    padding-left: 15px;
+    background: transparent;
+}
+
+.perfil-btn-editar{
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #D15FC0 0%, #8C9CFF 100%);
+    border: none;
+    border-radius: 20px;
+    margin-left: 8px;
+    
+}
+
+.perfil-btn-editar:last-child{
+       vertical-align: top;
+}
+
+.perfil-textarea{
+    border-color: rgba(76, 39, 151, 1);;
+    border-radius: 22px; 
+    background: transparent;
+    width: 75%;
+    height: 100px;
+}
+
+.perfil-btn-atualizar{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin: 5% 0 0 35%;
+    width: 25%;
+    height: 50px;
+    background: linear-gradient(180deg, #D15FC0 0%, #8C9CFF 100%);
+    border: none;
+    border-radius: 50px;
+}
+
+.container-home-aside{
+    width: 20%;
+    position: fixed; 
+    right: 1%; 
+    top: 8%;
+}
+
+.perfil-midia-image{
+    width: 200px;
+}
+
+@media (min-width:320px) {
+    .perfil-form{
+        width: 100%;
+    }
+
+    .perfil-midia{
+        float: none;
+        width: 100%;
+        margin: 10% 5%;
+    }
+    .container-home-aside{
+        margin: 0 auto;
+        position: static;
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .container-home-aside{
+        position: fixed;
+        width: 25%;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    .container-home-aside{
+        position: fixed;
+        width: 20%;
+    }
+}
