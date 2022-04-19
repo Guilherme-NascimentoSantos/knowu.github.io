@@ -239,7 +239,7 @@ function perfil() {
       latitute: -23.5791213,
       longitute: -46.6658027
     }
-    axios.post("http://localhost:8080/evento/eventos-proximos", params).then(function (resultado) {
+    axios.post("http://34.228.172.224:8080/evento/eventos-proximos", params).then(function (resultado) {
       console.log(resultado.data.length);
       for (let i = 0; i < resultado.data.length; i++) {
         locations[i] = new Array(resultado.data.length)
@@ -269,7 +269,7 @@ function perfil() {
       latitute: -23.5791213,
       longitute: -46.6658027
     }
-    axios.post("http://localhost:8080/usuarios/atualizarusuarios-proximos", params).then(function (resultadoUsuario) {
+    axios.post("http://34.228.172.224:8080/usuarios/atualizarusuarios-proximos", params).then(function (resultadoUsuario) {
       for (let i = 1; i < 4; i++) {
         console.log(resultadoUsuario)
         document.getElementById(`nickname${i}`).innerHTML = resultadoUsuario.data[i][0];
@@ -295,7 +295,7 @@ function perfil() {
       latitute: -23.5791213,
       longitute: -46.6658027
     }
-    axios.post("http://localhost:8080/usuarios/atualizarusuarios-proximos", params).then(function (resultadoAtualizacaoUsuario) {
+    axios.post("http://34.228.172.224:8080/usuarios/atualizarusuarios-proximos", params).then(function (resultadoAtualizacaoUsuario) {
       for (let i = 1; i < 4; i++) {
         // alert(resultadoUsuario.data);
         document.getElementById(`nickname${i}`).innerHTML = resultadoAtualizacaoUsuario.data[i][0];
@@ -316,7 +316,7 @@ function perfil() {
       latitute: -23.5791213,
       longitute: -46.6658027
     }
-    axios.post("http://localhost:8080/evento/atualizareventos-proximos", params).then(function (resultadoAtualizacaoEvento) {
+    axios.post("http://34.228.172.224:8080/evento/atualizareventos-proximos", params).then(function (resultadoAtualizacaoEvento) {
       console.log(resultadoAtualizacaoEvento.data.length);
       for (let i = 0; i < resultadoAtualizacaoEvento.data.length; i++) {
         locations[i] = new Array(resultadoAtualizacaoEvento.data.length)
@@ -361,7 +361,7 @@ function perfil() {
     }
 
 
-    axios.post("http://localhost:8080/evento/criar/" + idUsuario, params).then(function (resultado) {
+    axios.post("http://34.228.172.224:8080/evento/criar/" + idUsuario, params).then(function (resultado) {
       alert("Evento criado com sucesso!!")
       // eventosProximos = resultado.data[0]
     }).catch(e => {
